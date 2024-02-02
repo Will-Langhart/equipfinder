@@ -1,0 +1,32 @@
+{
+  "name": "equipmentfinder",
+  "description": "react next template",
+  "version": "5.2.1",
+  "private": true,
+  "author": "BrianGabe, Inc",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "lerna clean --yes && rimraf node_modules",
+    "clean:build": "lerna exec -- rimraf \"{.next,dist,out,build,.docz,.firebase}\"",
+    "start:equip": "yarn workspace @equipmentfinder/equip run start",
+    "start:equip-next": "yarn workspace @equipmentfinder/equip-next run dev",
+    "build:equip": "yarn workspace @equipmentfinder/equip run build",
+    "build:equip-next": "yarn workspace @equipmentfinder/equip-next run build",
+    "serve:equip": "yarn workspace @equipmentfinder/equip run serve",
+    "serve:equip-next": "yarn workspace @equipmentfinder/equip-next run serve",
+    "firebase-deploy:equip": "yarn build:equip && yarn workspace @equipmentfinder/equip run host:firebase",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.3",
+    "lerna": "^5.5.1",
+    "prettier": "^2.8.8",
+    "rimraf": "^3.0.2",
+    "serve": "^14.2.0"
+  }
+}

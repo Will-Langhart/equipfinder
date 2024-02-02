@@ -1,0 +1,70 @@
+[
+	{
+		"id": 85992,
+		"lat": "13.4149",
+		"lng": "8.4034",
+		"formattedAddress": "27384 Tremblay Causeway",
+		"zipcode": "82925",
+		"city": "Plumbing",
+		"state_long": "Montana",
+		"state_short": "DE",
+		"country_long": "England",
+		"country_short": "CL",
+		"locationImage": {
+			"id": 63700,
+			"url": "https://suburbanplumbingoc.com/wp-content/uploads/2020/06/How-Your-Home-Plumbing-System-Works.jpg"
+		},
+		"numberOfPost": 54129
+	},
+	{
+		"id": 31657,
+		"lat": "-46.6464",
+		"lng": "-159.9779",
+		"formattedAddress": "0977 Turner Avenue",
+		"zipcode": "54996",
+		"city": "Electrical",
+		"state_long": "Kansas",
+		"state_short": "FL",
+		"country_long": "United States of America",
+		"country_short": "BZ",
+		"locationImage": {
+			"id": 10311,
+			"url": "https://img.freepik.com/free-photo/man-electrical-technician-working-switchboard-with-fuses_169016-24062.jpg"
+		},
+		"numberOfPost": 19236
+	},
+	{
+		"id": 87806,
+		"lat": "-59.8068",
+		"lng": "140.0707",
+		"formattedAddress": "0443 Abshire Ferry",
+		"zipcode": "82618-9791",
+		"city": "Carpentering",
+		"state_long": "Pennsylvania",
+		"state_short": "MA",
+		"country_long": "Spain",
+		"country_short": "MP",
+		"locationImage": {
+			"id": 36159,
+			"url": "https://www.aces.edu/wp-content/uploads/2019/05/Chainsaw-476886690_4288x2848-1.jpeg"
+		},
+		"numberOfPost": 45667
+	},
+	{
+		"id": 87806,
+		"lat": "-59.8068",
+		"lng": "140.0707",
+		"formattedAddress": "0443 Abshire Ferry",
+		"zipcode": "82618-9791",
+		"city": "Construction",
+		"state_long": "Pennsylvania",
+		"state_short": "MA",
+		"country_long": "Spain",
+		"country_short": "MP",
+		"locationImage": {
+			"id": 36159,
+			"url": "https://i.ebayimg.com/images/g/iPQAAOSwA6Nj~AJ9/s-l1600.jpg"
+		},
+		"numberOfPost": 45667
+	}
+]
