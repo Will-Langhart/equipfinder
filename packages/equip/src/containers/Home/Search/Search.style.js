@@ -88,22 +88,20 @@ export const SearchWrapper = styled.div`
   background-color: ${themeGet('color.1', '#ffffff')};
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.08);
   position: absolute;
-  bottom: 81px;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to truly center based on element's size */
   z-index: 1;
 
   @media (min-width: 569px) and (max-width: 991px) {
     width: 414px;
-    left: 30px;
+    /* Remove left: 30px; */
   }
 
   @media (max-width: 480px) {
     width: calc(100% - 30px);
     padding: 15px;
-    left: 15px;
-
-    > p {
-      display: none;
-    }
+    /* Adjust for smaller screens without changing the centering */
   }
 
   > div {
