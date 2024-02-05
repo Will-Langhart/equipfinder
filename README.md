@@ -28,6 +28,7 @@ Make sure you have Node & Yarn installed in your system. Recommended node versio
 node -v
 
 yarn -v
+npm install -g yarn
 ```
 
 If it's not installed in your system then please install them by checking official documentation of,
