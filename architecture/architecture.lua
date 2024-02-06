@@ -1,3 +1,4 @@
+
 +-----------------+              +---------------------+
 |       UI        | ------------>|   API & Services    |         
 +-----------------+              +---------------------+          
@@ -273,4 +274,3 @@ RentQuip.Authentication.setupMFA()
 RentQuip.Users.createUser("JaneDoe", "password123")
 RentQuip.Equipments.addEquipment("Laptop", "High-performance laptop", 999.99)
 RentQuip.Transactions.initiateTransaction(1, 1)
-
