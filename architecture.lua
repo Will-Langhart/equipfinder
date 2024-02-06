@@ -1,3 +1,5 @@
+-- RentQuip Architectural Blueprint
+
 +-----------------+              +---------------------+
 |       UI        | ------------>|   API & Services    |         
 +-----------------+              +---------------------+          
@@ -11,66 +13,66 @@
            |                    +---------------------+
            |                    |    Data Access      | --------------------------+
            |                    +---------------------+                           |
-           |                         |                                            | 
-           |                         V                                            |
+           |                              |                                            | 
+           |                              V                                            |
            |                    +---------------------+                           |
            |                    |     Analytics       | <-------------------------+
            |                    +---------------------+                          
-           |                         |
-           |                         V
+           |                              |
+           |                              V
            |                    +---------------------+
            |                    | AWS Amplify Hosting | <-------------------------+
            |                    +---------------------+                           |
-           |                         |                                            |  
-           |                         V                                            |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    |   React Frontend    |                           |
            |                    +---------------------+                           |
-           |                         |                                            |  
-           |                         V                                            |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    |   GitHub Actions    |                           |
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    |      Security       |                           |
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    |    Authentication   |                           |
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    |  Database Models    | --------------------------+
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    | AWS Cognito Auth    |                           |
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    |    Infrastructure   |                           |
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    | Continuous Delivery |                           |
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            |                    +---------------------+                           |
            |                    |     Monitoring      |                           |
            |                    +---------------------+                           |
-           |                         |                                           |  
-           |                         V                                           |  
+           |                              |                                       |  
+           |                              V                                       |  
            +--------------------+---------------------+---------------------------+
-           |                RentQuip Rental Platform Architecture                |
-           +-----------------------------------------------------------------------+
+           |                RentQuip Rental Platform  Architecture                |
+           +--------------------+---------------------+---------------------------+
 
 -- RentQuip Architectural Blueprint in Lua
 
@@ -172,7 +174,104 @@ RentQuip.ContinuousDelivery = {
     end
 }
 
--- Example usage of the refined blueprint
+-- RentQuip Architectural Expansion in Lua
+
+-- Infrastructure Management
+RentQuip.Infrastructure = {
+    -- AWS CloudFormation for infrastructure as code
+    setupInfrastructure = function()
+        print("Setting up infrastructure with AWS CloudFormation")
+        -- Code to automate infrastructure setup
+    end,
+    updateInfrastructure = function()
+        print("Updating infrastructure based on CloudFormation templates")
+        -- Code to update infrastructure
+    end
+}
+
+-- Continuous Integration & Deployment
+RentQuip.CI_CD = {
+    -- Integration with GitHub Actions
+    setupGitHubActions = function()
+        print("Configuring GitHub Actions for CI/CD")
+        -- Code to setup GitHub Actions for Continuous Integration
+    end,
+    deployToAmplify = function()
+        print("Deploying application to AWS Amplify")
+        -- Code to deploy the latest version to AWS Amplify
+    end
+}
+
+-- Enhanced Security Measures
+RentQuip.Security.enhanceSecurity = function()
+    print("Enhancing security measures")
+    -- Implement advanced security features (e.g., multi-factor authentication)
+end
+
+-- Advanced Monitoring Solutions
+RentQuip.Monitoring.setupAdvancedMonitoring = function()
+    print("Setting up advanced monitoring with AWS CloudWatch")
+    -- Code to integrate AWS CloudWatch for detailed monitoring and alerts
+end
+
+-- React Frontend Enhancements
+RentQuip.UI = {
+    -- Dynamic UI updates and state management
+    updateUI = function(component, newState)
+        print("Updating UI component: " .. component .. " to new state")
+        -- Code to dynamically update UI components
+    end,
+    manageState = function(state)
+        print("Managing state for global application context")
+        -- Code for global state management using React Context or similar
+    end
+}
+
+-- Authentication Enhancements with AWS Cognito
+RentQuip.Authentication = {
+    -- Enhanced authentication flows
+    setupMFA = function()
+        print("Setting up Multi-Factor Authentication with AWS Cognito")
+        -- Code to enable MFA
+    end,
+    manageUserSessions = function()
+        print("Managing user sessions for enhanced security")
+        -- Code to manage user sessions securely
+    end
+}
+
+-- Data Models and Access Patterns
+RentQuip.DataModels = {
+    -- Define and manage database schemas
+    defineSchemas = function()
+        print("Defining data schemas for DynamoDB")
+        -- Code to define database schemas for AWS DynamoDB
+    end,
+    setupAccessPatterns = function()
+        print("Configuring access patterns for efficient data retrieval")
+        -- Code to configure access patterns
+    end
+}
+
+-- Interaction with AWS Services
+RentQuip.AWSInteractions = {
+    -- AWS SDK setup and configuration
+    setupSDK = function()
+        print("Configuring AWS SDK for serverless interactions")
+        -- Code to configure AWS SDK
+    end,
+    invokeLambdaFunctions = function(functionName, payload)
+        print("Invoking AWS Lambda function: " .. functionName)
+        -- Code to invoke Lambda functions for serverless computing
+    end
+}
+
+-- Example of advanced usage
+RentQuip.CI_CD.setupGitHubActions()
+RentQuip.Security.enhanceSecurity()
+RentQuip.Monitoring.setupAdvancedMonitoring()
+RentQuip.UI.updateUI("EquipmentList", "refreshed")
+RentQuip.Authentication.setupMFA()
 RentQuip.Users.createUser("JaneDoe", "password123")
 RentQuip.Equipments.addEquipment("Laptop", "High-performance laptop", 999.99)
 RentQuip.Transactions.initiateTransaction(1, 1)
