@@ -5,15 +5,18 @@ This document outlines the tasks needed to be completed for the successful devel
 
 ## Tasks
 
+### UI 
+- [ ] Review current UI/UX designs 
+- [ ] Refine, thin and brighten the Logo
+- [ ] Test login form
+- [ ] 
+- [ ] Implement improvements for better user experience.
+- [ ] Ensure responsiveness and accessibility standards are met.
+
 ### Architectural Structure Blueprint
 - [ ] Define the overall architecture of the application.
 - [ ] Identify key components and their interactions.
 - [ ] Create a diagram representing the architecture.
-
-### UI Refinement
-- [ ] Review current UI/UX designs.
-- [ ] Implement improvements for better user experience.
-- [ ] Ensure responsiveness and accessibility standards are met.
 
 ### Code Refinement
 - [ ] Clean the existing codebase for clarity and efficiency.
